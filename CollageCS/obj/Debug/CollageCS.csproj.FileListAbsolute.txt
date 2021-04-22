@@ -1,0 +1,6 @@
+z:\EJPARKER1\Visual Studio 2017\Projects\CollageCS\CollageCS\bin\Debug\CollageCS.exe.config
+z:\EJPARKER1\Visual Studio 2017\Projects\CollageCS\CollageCS\bin\Debug\CollageCS.exe
+z:\EJPARKER1\Visual Studio 2017\Projects\CollageCS\CollageCS\bin\Debug\CollageCS.pdb
+z:\EJPARKER1\Visual Studio 2017\Projects\CollageCS\CollageCS\obj\Debug\CollageCS.exe
+z:\EJPARKER1\Visual Studio 2017\Projects\CollageCS\CollageCS\obj\Debug\CollageCS.pdb
+z:\EJPARKER1\Visual Studio 2017\Projects\CollageCS\CollageCS\obj\Debug\CollageCS.csprojResolveAssemblyReference.cache
