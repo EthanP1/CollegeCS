@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace CollageCS
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             /*
             Console.WriteLine("Give me two numbers between 0 - 255");
@@ -25,89 +22,95 @@ namespace CollageCS
             {
                 case 1:
                     Rocket();
-
                     break;
                 case 2:
                     Car();
                     break;
                 default:
-                    Console.WriteLine("Hmm, that's not right);
+                    Console.WriteLine("Hmm, that's not right");
                     break;
             }
+            Console.WriteLine("Press any key to exit: ");
             Console.ReadKey();
-
         }
-        public void Rocket()
+
+        private static void Rocket()
         {
             Console.WriteLine("\n\n\n\n\n\n\n  *\n ***\n*****\n*****\n*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("\n\n\n\n\n\n  *\n ***\n*****\n*****\n*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("\n\n\n\n\n  *\n ***\n*****\n*****\n*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("\n\n\n\n  *\n ***\n*****\n*****\n*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("\n\n\n  *\n ***\n*****\n*****\n*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("\n\n  *\n ***\n*****\n*****\n*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("\n  *\n ***\n*****\n*****\n*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("  *\n ***\n*****\n*****\n*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine(" ***\n*****\n*****\n*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("*****\n*****\n*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("*****\n*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("*****\n*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("*****\n*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("*****\n ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine(" ***\n  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("  *\n ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine(" ***\n*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
             Console.WriteLine("*****");
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             Console.Clear();
         }
-    public void Car()
+
+        private static void Car()
         {
             Console.Write("Car go Brr");
             int i = 0;
-            while (true)
+            int k = 0;
+            while (k < 4)
             {
-                System.Threading.Thread.Sleep(i);
+                Thread.Sleep(i);
                 Console.Write("r");
                 i++;
                 if (i > 100)
                 {
-                i = 0;
+                    i = 1;
+                    k++;
                 }
-}
+                {
+                    
+                }
+            }
         }
     }
 }
