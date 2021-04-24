@@ -3,9 +3,9 @@ using System.Threading;
 
 namespace CollageCS
 {
-    internal class Program
+    internal static class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             /*
             Console.WriteLine("Give me two numbers between 0 - 255");
@@ -17,7 +17,7 @@ namespace CollageCS
             Console.WriteLine(bNum2);
             */
             Console.Write("1 for Rocket\n2 for Car: ");
-            byte bSel = Convert.ToByte(Console.ReadLine());
+            var bSel = Convert.ToByte(Console.ReadLine());
             switch (bSel)
             {
                 case 1:
@@ -95,8 +95,8 @@ namespace CollageCS
         private static void Car()
         {
             Console.Write("Car go Brr");
-            int i = 0;
-            int k = 0;
+            var i = 0;
+            var k = 0;
             while (k < 4)
             {
                 Thread.Sleep(i);
