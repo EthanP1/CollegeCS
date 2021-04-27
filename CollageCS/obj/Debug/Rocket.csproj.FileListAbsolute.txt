@@ -1,9 +1,3 @@
-Z:/EJPARKER1/Visual Studio 2017/Projects/BasicCS/CollageCS/obj/Debug/Rocket.csprojResolveAssemblyReference.cache
-Z:/EJPARKER1/Visual Studio 2017/Projects/BasicCS/CollageCS/obj/Debug/CollageCS.exe
-Z:/EJPARKER1/Visual Studio 2017/Projects/BasicCS/CollageCS/obj/Debug/CollageCS.pdb
-Z:/EJPARKER1/Visual Studio 2017/Projects/BasicCS/CollageCS/bin/Debug/CollageCS.exe.config
-Z:/EJPARKER1/Visual Studio 2017/Projects/BasicCS/CollageCS/bin/Debug/CollageCS.exe
-Z:/EJPARKER1/Visual Studio 2017/Projects/BasicCS/CollageCS/bin/Debug/CollageCS.pdb
 /Users/senpai/RiderProjects/CollageCS/CollageCS/obj/Debug/Rocket.csprojAssemblyReference.cache
 /Users/senpai/RiderProjects/CollageCS/CollageCS/obj/Debug/Rocket.csproj.CoreCompileInputs.cache
 /Users/senpai/RiderProjects/CollageCS/CollageCS/obj/Debug/CollageCS.exe
@@ -11,3 +5,8 @@ Z:/EJPARKER1/Visual Studio 2017/Projects/BasicCS/CollageCS/bin/Debug/CollageCS.p
 /Users/senpai/RiderProjects/CollageCS/CollageCS/bin/Debug/CollageCS.exe.config
 /Users/senpai/RiderProjects/CollageCS/CollageCS/bin/Debug/CollageCS.exe
 /Users/senpai/RiderProjects/CollageCS/CollageCS/bin/Debug/CollageCS.pdb
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\obj\Debug\CollageCS.exe
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\obj\Debug\CollageCS.pdb
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\bin\Debug\CollageCS.exe.config
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\bin\Debug\CollageCS.exe
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\bin\Debug\CollageCS.pdb

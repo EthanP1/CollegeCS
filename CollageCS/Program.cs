@@ -5,26 +5,47 @@ namespace CollageCS
 {
     internal static class Program
     {
+        private static int i;
+
         private static void Main()
         {
-            /*
-            Console.WriteLine("Give me two numbers between 0 - 255");
-            Console.Write("Give me the first number: ");
-            byte bNum1 = Convert.ToByte (Console.ReadLine());
-            Console.Write("Give me the second number: ");
-            byte bNum2 = Convert.ToByte (Console.ReadLine());
-            Console.WriteLine(bNum1);
-            Console.WriteLine(bNum2);
-            */
-            Console.Write("1 for Rocket\n2 for Car: ");
+            Console.Write("1 Projects\n2 Fun: ");
             var bSel = Convert.ToByte(Console.ReadLine());
             switch (bSel)
             {
                 case 1:
-                    Rocket();
+                    var bSel2 = Convert.ToByte(Console.ReadLine());
+                    Console.Write("1 Selection\n2 Switch: ");
+                    switch (bSel2)
+                    {
+                        case 1:
+                            PrintTwoNum();
+                            break;
+                        case 2:
+                            Selection();
+                            break;
+                        case 3:
+                            Switchtest();
+                            break;
+                        default:
+                            break;
+                    }
                     break;
                 case 2:
-                    Car();
+                    Console.Write("1 Rocket\n2 Car: ");
+                    var bSel3 = Convert.ToByte(Console.ReadLine());
+                    switch (bSel3)
+                    {
+                        case 1:
+                            Rocket();
+                            break;
+                        case 2:
+                            Car();
+                            break;
+                        default:
+                            Console.WriteLine("Something went wrong, try again with a number between 1-2");
+                            break;
+                    }
                     break;
                 default:
                     Console.WriteLine("Hmm, that's not right");
@@ -32,6 +53,70 @@ namespace CollageCS
             }
             Console.WriteLine("Press any key to exit: ");
             Console.ReadKey();
+        }
+
+        private static void PrintTwoNum()
+        {
+            Console.WriteLine("Give me two numbers between 0 - 255");
+            Console.Write("Give me the first number: ");
+            byte bNum1 = Convert.ToByte(Console.ReadLine());
+            Console.Write("Give me the second number: ");
+            byte bNum2 = Convert.ToByte(Console.ReadLine());
+            Console.WriteLine(bNum1);
+            Console.WriteLine(bNum2);
+        }
+
+        private static void Switchtest()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i);
+            }
+            do
+            {
+                Console.WriteLine("testing", i);
+                i++;
+            }
+            while (i <= 15);
+            {
+                Console.WriteLine("Fun", i);
+            }
+        }
+
+        private static void Selection()
+        {
+            //Console.Write("What temerature is it: ");
+            //byte temperature = Convert.ToByte(Console.ReadLine());
+
+
+            //if (temperature >= 40)
+            //{
+            //    Console.WriteLine("hot");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("cold");
+            //}
+
+            Console.Write("How much are you earning: £");
+            uint iSal = Convert.ToUInt16(Console.ReadLine());
+            Console.Write("and how long have you worked here: ");
+            Byte bYears = Convert.ToByte(Console.ReadLine());
+            if (iSal > 40000)
+            {
+                if (bYears >= 2)
+                {
+                    Console.WriteLine("\nCongrats! \nYour invited to the Christmas party!");
+                }
+                else
+                {
+                    Console.WriteLine("Thanks for the hard work!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Keep up the good work!");
+            }
         }
 
         private static void Rocket()
@@ -108,7 +193,7 @@ namespace CollageCS
                     k++;
                 }
                 {
-                    
+
                 }
             }
         }
