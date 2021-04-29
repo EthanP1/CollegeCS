@@ -1,0 +1,6 @@
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\obj\Release\CollegeCS.csprojResolveAssemblyReference.cache
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\bin\Release\CollageCS.exe.config
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\bin\Release\CollageCS.exe
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\bin\Release\CollageCS.pdb
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\obj\Release\CollageCS.exe
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\obj\Release\CollageCS.pdb

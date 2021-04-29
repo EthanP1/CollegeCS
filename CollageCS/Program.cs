@@ -14,8 +14,8 @@ namespace CollageCS
             switch (bSel)
             {
                 case 1:
+                    Console.Write("\n\n1 Print Two Numbers\n2 Selection\n3 Switch\n4 Function procedure: ");
                     var bSel2 = Convert.ToByte(Console.ReadLine());
-                    Console.Write("1 Selection\n2 Switch: ");
                     switch (bSel2)
                     {
                         case 1:
@@ -26,6 +26,12 @@ namespace CollageCS
                             break;
                         case 3:
                             Switchtest();
+                            break;
+                        case 4:
+                            Console.Clear();
+                            int iNum1 = 9;
+                            int iNum2 = 10;
+                            AddTwoNumbers(iNum1, iNum2);
                             break;
                         default:
                             break;
@@ -51,8 +57,15 @@ namespace CollageCS
                     Console.WriteLine("Hmm, that's not right");
                     break;
             }
-            Console.WriteLine("Press any key to exit: ");
+            Console.Write("Press any key to exit: ");
             Console.ReadKey();
+        }
+
+        private static void AddTwoNumbers(int iNum1, int iNum2)
+        {
+            int iAns;
+            iAns = iNum1 + iNum2;
+            Console.WriteLine("{0} + {1} = {2}", iNum1, iNum2, iAns);
         }
 
         private static void PrintTwoNum()

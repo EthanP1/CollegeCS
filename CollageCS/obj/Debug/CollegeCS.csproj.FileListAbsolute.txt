@@ -1,0 +1,5 @@
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\bin\Debug\CollageCS.exe.config
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\bin\Debug\CollageCS.exe
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\bin\Debug\CollageCS.pdb
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\obj\Debug\CollageCS.exe
+Z:\EJPARKER1\Visual Studio 2017\Projects\BasicCS\CollageCS\obj\Debug\CollageCS.pdb
