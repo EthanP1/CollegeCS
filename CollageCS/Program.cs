@@ -14,7 +14,7 @@ namespace CollageCS
             switch (bSel)
             {
                 case 1:
-                    Console.Write("\n\n1 Print Two Numbers\n2 Selection\n3 Switch\n4 Function procedure: ");
+                    Console.Write("\n\n1 Print Two Numbers\n2 Selection\n3 Switch\n4 Add two numbers\n5 Sub two numbers: ");
                     var bSel2 = Convert.ToByte(Console.ReadLine());
                     switch (bSel2)
                     {
@@ -31,7 +31,13 @@ namespace CollageCS
                             Console.Clear();
                             int iNum1 = 9;
                             int iNum2 = 10;
-                            AddTwoNumbers(iNum1, iNum2);
+                            AddTwoNumbers(ref iNum1, ref iNum2);
+                            break;
+                        case 5:
+                            Console.Clear();
+                            int iNum3 = 10;
+                            int iNum4 = 9;
+                            SubTwoNumbers(ref iNum3, ref iNum4);
                             break;
                         default:
                             break;
@@ -61,9 +67,17 @@ namespace CollageCS
             Console.ReadKey();
         }
 
-        private static void AddTwoNumbers(int iNum1, int iNum2)
+        private static void SubTwoNumbers(ref int iNum3, ref int iNum4)
+        {
+            int iAns2;
+            iAns2 = iNum3 - iNum4;
+            Console.WriteLine("{0} - {1} = {2}", iNum3, iNum4, iAns2);
+        }
+
+        private static void AddTwoNumbers(ref int iNum1,ref int iNum2)
         {
             int iAns;
+            iNum2 = 60;
             iAns = iNum1 + iNum2;
             Console.WriteLine("{0} + {1} = {2}", iNum1, iNum2, iAns);
         }
