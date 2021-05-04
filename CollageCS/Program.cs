@@ -26,25 +26,32 @@ namespace CollageCS
                         switch (bSel2)
                         {
                             case 1:
+                                //Print Two Numbers - 22/03/21
                                 PrintTwoNum();
                                 break;
                             case 2:
+                                //Selection 01/04/21
                                 Selection();
                                 break;
                             case 3:
+                                //Switch 21/04/21
                                 Switchtest();
                                 break;
                             case 4:
+                                //Add Two Numbers - 29/04/21
                                 Console.Clear();
                                 int iNum1 = 9;
                                 int iNum2 = 10;
                                 AddTwoNumbers(ref iNum1, ref iNum2);
                                 break;
                             case 5:
+                                //Sub Two Numbers - 29/04/21
                                 Console.Clear();
                                 int iNum3 = 10;
                                 int iNum4 = 9;
                                 SubTwoNumbers(ref iNum3, ref iNum4);
+                                break;
+                            case 6:
                                 break;
                             default:
                                 break;
@@ -72,9 +79,11 @@ namespace CollageCS
                         switch (bSel3)
                         {
                             case 1:
+                                //Rocket - 01/04/21
                                 Rocket();
                                 break;
                             case 2:
+                                //Car - 24/03/21
                                 Car();
                                 break;
                             default:
