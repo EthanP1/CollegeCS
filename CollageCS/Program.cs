@@ -10,6 +10,12 @@ namespace CollageCS
 
         private static void Main()
         {
+            bool DevMode = true;
+            if (DevMode == true)
+            {
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Interest();
+            }
             bool Menu = true;
             while (Menu == true)
             {
@@ -52,6 +58,7 @@ namespace CollageCS
                                 SubTwoNumbers(ref iNum3, ref iNum4);
                                 break;
                             case 6:
+                                Interest();
                                 break;
                             default:
                                 break;
@@ -91,6 +98,8 @@ namespace CollageCS
                                 break;
                         }
                         break;
+                    case 3:
+                        break;
                     default:
                         Console.WriteLine("Hmm, that's not right");
                         break;
@@ -99,6 +108,21 @@ namespace CollageCS
             
             Console.Write("Press any key to exit: ");
             Console.ReadKey();
+        }
+
+        private static void Interest()
+        {
+            //This is the interest rate
+            double dIntRate = 1.2;
+            //Amount given by the user
+            Console.Write("Please enter your initial amount: ");
+            double dAmount= Convert.ToDouble(Console.ReadLine());
+            //Number of years they will be leaving the money in the bank
+            Console.Write("Now enter the number of years you intend to leave it there: ");
+            byte bNumOfYears = Convert.ToByte(Console.ReadLine());
+            //Calculation
+            double dIntResult = dAmount * dIntRate * bNumOfYears;
+            Console.WriteLine(dIntResult);
         }
 
         private static void SubTwoNumbers(ref int iNum3, ref int iNum4)
