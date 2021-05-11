@@ -6,28 +6,26 @@ namespace CollageCS
     internal static class Program
     {
         private static int i;
-        private static int iSal;
-
         private static void Main()
         {
             bool DevMode = true;
+            bool Menu = true;
             if (DevMode == true)
             {
-                Console.ForegroundColor = ConsoleColor.Magenta;
+                Menu = false;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Interest();
             }
-            bool Menu = true;
+            
             while (Menu == true)
             {
                 Console.Write("1 Projects\n2 Fun: ");
                 var bSel = Convert.ToByte(Console.ReadLine());
-                //byte bSel = 1;
-                //byte bSel2 = 1;
-                ////return true
+
                 switch (bSel)
                 {
                     case 1:
-                        Console.Write("\n\n1 Print Two Numbers\n2 Selection\n3 Switch\n4 Add two numbers\n5 Sub two numbers: ");
+                        Console.Write("\n\n1 Print Two Numbers\n2 Selection\n3 Switch\n4 Add two numbers\n5 Sub two numbers\n6 Interest Calculator: ");
                         var bSel2 = Convert.ToByte(Console.ReadLine());
                         switch (bSel2)
                         {
@@ -58,6 +56,7 @@ namespace CollageCS
                                 SubTwoNumbers(ref iNum3, ref iNum4);
                                 break;
                             case 6:
+                                //Interest Calculator - 06/05/21
                                 Interest();
                                 break;
                             default:
@@ -106,23 +105,30 @@ namespace CollageCS
                 }
             }
             
-            Console.Write("Press any key to exit: ");
+            Console.WriteLine("Press any key to exit: ");
             Console.ReadKey();
         }
 
         private static void Interest()
         {
-            //This is the interest rate
-            double dIntRate = 1.2;
+            Console.Clear();
+            //Interest given by the user
+            Console.Write("Please enter the interest rate you wish to calculate (e.g. 1.06 for 6%): ");
+            double dIntRate = Convert.ToDouble(Console.ReadLine());
             //Amount given by the user
-            Console.Write("Please enter your initial amount: ");
+            Console.Write("Please enter your initial amount: £");
             double dAmount= Convert.ToDouble(Console.ReadLine());
             //Number of years they will be leaving the money in the bank
             Console.Write("Now enter the number of years you intend to leave it there: ");
             byte bNumOfYears = Convert.ToByte(Console.ReadLine());
             //Calculation
-            double dIntResult = dAmount * dIntRate * bNumOfYears;
-            Console.WriteLine(dIntResult);
+            for (int i = 0; i < bNumOfYears; i++)
+            {
+                dAmount = dAmount * dIntRate;
+            }
+            double truncated = Math.Truncate(dAmount * 100) / 100;
+
+            Console.WriteLine("£" + truncated);
         }
 
         private static void SubTwoNumbers(ref int iNum3, ref int iNum4)
@@ -184,19 +190,10 @@ namespace CollageCS
             //    Console.WriteLine("cold");
             //}
 
-            
-            try
-            {
-                Console.Write("How much are you earning: £");
-                var iSal = Convert.ToUInt16(Console.ReadLine());
-            }
-            catch (System.OverflowException)
-            {
-                Console.WriteLine("Whoa there pal, that's a lot of money, why don't you try being a litlle more realistic...");
-                Console.Write("How much are you earning: £");
-                var iSal = Convert.ToUInt16(Console.ReadLine());
-                //throw;
-            }
+            ushort iSal= 0;
+            Console.Write("How much are you earning: £");
+            ushort.TryParse(Console.ReadLine(), out iSal);
+
             
             Console.Write("and how long have you worked here: ");
             Byte bYears = Convert.ToByte(Console.ReadLine());
@@ -294,6 +291,11 @@ namespace CollageCS
 
                 }
             }
+        }
+        public static string Truncate(this string value, int maxLength)
+        {
+            if (string.IsNullOrEmpty(value)) return value;
+            return value.Length <= maxLength ? value : value.Substring(0, maxLength);
         }
     }
 }
