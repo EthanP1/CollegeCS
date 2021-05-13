@@ -14,7 +14,7 @@ namespace CollageCS
             {
                 Menu = false;
                 Console.ForegroundColor = ConsoleColor.Green;
-                Interest();
+                Animation();
             }
             
             while (Menu == true)
@@ -80,7 +80,7 @@ namespace CollageCS
                         }
                         break;
                     case 2:
-                        Console.Write("1 Rocket\n2 Car: ");
+                        Console.Write("1 Rocket\n2 Car\n3 Wave Animation: ");
                         var bSel3 = Convert.ToByte(Console.ReadLine());
                         switch (bSel3)
                         {
@@ -98,6 +98,7 @@ namespace CollageCS
                         }
                         break;
                     case 3:
+                        Animation();
                         break;
                     default:
                         Console.WriteLine("Hmm, that's not right");
@@ -107,6 +108,39 @@ namespace CollageCS
             
             Console.WriteLine("Press any key to exit: ");
             Console.ReadKey();
+        }
+
+        private static void Animation()
+        {
+            //string Animation = "Ne, ko";
+            //string[] TheAnimation = Animation.Split(", ");
+            //foreach (string Animatio in TheAnimation)
+            //    Console.WriteLine(Animatio);
+            string dot = ".";
+            for (int i = 0; i < 10; i++)
+            {
+                int j = 0;
+                while (j < 100)
+                {
+                    for (int k = 0; k < j; k++)
+                    {
+                        Console.Write(dot);
+                    }
+                    System.Threading.Thread.Sleep(10);
+                    Console.WriteLine("\n");
+                    j++;
+                }
+                while (j != 0)
+                {
+                    for (int l = 0; l < j; l++)
+                    {
+                        Console.Write(dot);
+                    }
+                    System.Threading.Thread.Sleep(10);
+                    Console.WriteLine("\n");
+                    j--;
+                }
+            }
         }
 
         private static void Interest()
