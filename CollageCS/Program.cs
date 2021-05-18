@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading;
-
 namespace CollageCS
 {
     internal static class Program
@@ -14,9 +13,11 @@ namespace CollageCS
             {
                 Menu = false;
                 Console.ForegroundColor = ConsoleColor.Green;
-                Animation();
+                //Console.BackgroundColor = System.Drawing.ColorTranslator.FromHtml("#F9DA00");
+                //Console.Clear();
+                AnArry();
             }
-            
+
             while (Menu == true)
             {
                 Console.Write("1 Projects\n2 Fun: ");
@@ -58,6 +59,10 @@ namespace CollageCS
                             case 6:
                                 //Interest Calculator - 06/05/21
                                 Interest();
+                                break;
+                            case 7:
+                                //Arrys - 18/05/21
+                                AnArry();
                                 break;
                             default:
                                 break;
@@ -108,6 +113,22 @@ namespace CollageCS
             
             Console.WriteLine("Press any key to exit: ");
             Console.ReadKey();
+        }
+
+        private static void AnArry()
+        {
+            //byte[] NumberTime = new byte[] { 9, 10, 21 };
+            //Console.WriteLine("Whats {0} + {1}?", NumberTime[0],NumberTime[1]);
+            //Console.WriteLine(NumberTime[2]);
+
+            //Student Grades
+            byte[] StudentGrades = new byte[5];
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Please enter the grade for student {0}: ");
+                StudentGrades = byte[0] 
+            }
+            Console.WriteLine("");
         }
 
         private static void Animation()
