@@ -123,12 +123,31 @@ namespace CollageCS
 
             //Student Grades
             byte[] StudentGrades = new byte[5];
+            string[] StudentNames = new string[] {"John", "Bob", "Smith", "David", "Coner"};
             for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine("Please enter the grade for student {0}: ");
-                StudentGrades = byte[0] 
+                Console.Write("Please enter the grade for student {0}: ", i+1);
+                byte.TryParse(Console.ReadLine(), out StudentGrades[i]);
             }
-            Console.WriteLine("");
+            Console.WriteLine("\n");
+            for (int j = 0; j < 5; j++)
+            {
+                Console.WriteLine("{0} got grade: {1}", StudentNames[j], StudentGrades[j]);
+            }
+
+            byte HighestGrade = 0;
+            byte HighestIndex = 0;
+            byte k = 0;
+            foreach (byte Highest in StudentGrades)
+            {
+                if (HighestGrade < Highest)
+                {
+                    HighestGrade = Highest;
+                    HighestIndex = k;
+                }
+                ++k;
+            }
+            Console.WriteLine("{0} got the highest grade of {1}", StudentNames[HighestIndex], StudentGrades[HighestIndex]);
         }
 
         private static void Animation()
