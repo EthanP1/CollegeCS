@@ -1,0 +1,16 @@
+C:\Users\ethan\VS Code projects\CollegeCS\bin\Debug\net5.0\CollegeCS.exe
+C:\Users\ethan\VS Code projects\CollegeCS\bin\Debug\net5.0\CollegeCS.deps.json
+C:\Users\ethan\VS Code projects\CollegeCS\bin\Debug\net5.0\CollegeCS.runtimeconfig.json
+C:\Users\ethan\VS Code projects\CollegeCS\bin\Debug\net5.0\CollegeCS.runtimeconfig.dev.json
+C:\Users\ethan\VS Code projects\CollegeCS\bin\Debug\net5.0\CollegeCS.dll
+C:\Users\ethan\VS Code projects\CollegeCS\bin\Debug\net5.0\ref\CollegeCS.dll
+C:\Users\ethan\VS Code projects\CollegeCS\bin\Debug\net5.0\CollegeCS.pdb
+C:\Users\ethan\VS Code projects\CollegeCS\obj\Debug\net5.0\CollegeCS.csproj.AssemblyReference.cache
+C:\Users\ethan\VS Code projects\CollegeCS\obj\Debug\net5.0\CollegeCS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ethan\VS Code projects\CollegeCS\obj\Debug\net5.0\CollegeCS.AssemblyInfoInputs.cache
+C:\Users\ethan\VS Code projects\CollegeCS\obj\Debug\net5.0\CollegeCS.AssemblyInfo.cs
+C:\Users\ethan\VS Code projects\CollegeCS\obj\Debug\net5.0\CollegeCS.csproj.CoreCompileInputs.cache
+C:\Users\ethan\VS Code projects\CollegeCS\obj\Debug\net5.0\CollegeCS.dll
+C:\Users\ethan\VS Code projects\CollegeCS\obj\Debug\net5.0\ref\CollegeCS.dll
+C:\Users\ethan\VS Code projects\CollegeCS\obj\Debug\net5.0\CollegeCS.pdb
+C:\Users\ethan\VS Code projects\CollegeCS\obj\Debug\net5.0\CollegeCS.genruntimeconfig.cache
